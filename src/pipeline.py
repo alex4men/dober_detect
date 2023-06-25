@@ -1,6 +1,7 @@
 import os
 from PIL import Image
 import json
+import argparse
 
 import cv2
 
@@ -117,7 +118,7 @@ class Pipeline:
 
 if __name__ == '__main__':
 
-    HOME = '.'
+    HOME = '..'
     CONFIG_PATH = os.path.join(HOME, "model_data/GroundingDINO_SwinB_cfg.py")
     print(CONFIG_PATH, "; exist:", os.path.isfile(CONFIG_PATH))
     WEIGHTS_NAME = "groundingdino_swinb_cogcoor.pth"

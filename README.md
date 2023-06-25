@@ -25,15 +25,37 @@
 
 ## Установка
 
-
+```bash
+git clone https://github.com/alex4men/dober_detect.git
+cd dober_detect
+python3 -m venv --system-site-packages venv
+source venv/bin/activate
+pip install -U pip
+pip install -r requirements.txt
+```
 
 ## Тестирование
 
+В файле pipeline.py можно задать путь к входному и выходному видео, а так же список классов для поиска в самом конце файла.
 
+```bash
+cd src
+python pipeline.py
+```
 
 ## Деплой в продакшн
 
+На голом железе
+
+```bash
+uvicorn service:app --host 0.0.0.0 --port 3000
+```
+
+Либо в Докере
+
+```bash
 docker build -t dober_ml_img .
 docker run -d --name dober_ml_cont -p 8086:8086 dober_ml_img
+```
 
 
