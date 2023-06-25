@@ -1,11 +1,11 @@
 # Dober Team ML-service для кейса Netris хакатона Цифровой прорыв УрФО 2023
----
+
 [//]: # (Image References)
-[image1]: ./misc/test_out.png "Test output"
+[image1]: ./misc/test_out.jpg "Test output"
 
-![Test output][image1]
 
----
+![test output][image1]
+
 
 ## Описание
 
