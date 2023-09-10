@@ -55,7 +55,7 @@ uvicorn service:app --host 0.0.0.0 --port 3000
 
 ```bash
 docker build -t dober_ml_img .
-docker run -d --name dober_ml_cont -p 8086:8086 dober_ml_img
+docker run -d --rm --name dober_ml_cont -p 8086:8086 dober_ml_img
 ```
 
 
